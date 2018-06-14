@@ -10,7 +10,7 @@
 #SBATCH -J validation
 
 # Allocation time
-#SBATCH -t 9:00:00
+#SBATCH -t 20:00:00
 
 # Number of nodes
 #SBATCH --nodes=16
@@ -53,7 +53,7 @@ workD="$(pwd)"
 for i in $l
 do
   
-  caseD="$workD/$p$i"
+  caseD="$workD/Results/$p$i"
  
   for c in $inputCfg
   do 
